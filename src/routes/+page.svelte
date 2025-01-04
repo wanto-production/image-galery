@@ -70,7 +70,7 @@
                 pending = false
             }
         }}>
-            <Input type="file" name="file" required/>
+            <Input type="file" name="file" accept="image/*" required/>
             <Button type="submit" disabled={pending}>upload</Button>
         </form>
     {/if}
