@@ -31,7 +31,7 @@ export const actions = ({
     async store({ request,locals }){
         const image = (await request.formData()).get("file") as File
 
-        if (!["png","jpg","avif","webp"].includes(image.type.replaceAll("image/",""))){
+        if (!["png","jpg","avif","webp","jpeg","gif"].includes(image.type.replaceAll("image/",""))){
             
             
             return{ message:'oops wrong file type'}
